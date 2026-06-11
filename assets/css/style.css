@@ -1,0 +1,655 @@
+/* ==========================================
+   GLOBAL
+========================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+
+/* ==========================================
+   NAVBAR
+========================================== */
+
+#navbar.scrolled {
+    background: rgba(17, 17, 17, 0.98);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+}
+
+
+/* ==========================================
+   FADE UP ANIMATION
+========================================== */
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(40px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.fade-up.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ==========================================
+   SERVICE CARD
+========================================== */
+
+.service-card {
+    background: #191919;
+    border: 1px solid rgba(255,255,255,0.08);
+
+    padding: 2.5rem;
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+
+    border-color: rgba(215,176,74,0.35);
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,0.25);
+}
+
+
+/* ==========================================
+   CASE CARD
+========================================== */
+
+.case-card {
+    overflow: hidden;
+
+    background: #111111;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.case-card:hover {
+    transform: translateY(-10px);
+
+    border-color: rgba(215,176,74,0.35);
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,0.25);
+}
+
+
+/* ==========================================
+   CASE IMAGE ZOOM
+========================================== */
+
+.case-image {
+    width: 100%;
+
+    height: 320px;
+
+    object-fit: cover;
+
+    transition:
+        transform 0.7s ease;
+}
+
+.case-card:hover .case-image {
+    transform: scale(1.06);
+}
+
+
+/* ==========================================
+   FORM INPUT
+========================================== */
+
+.form-input {
+    width: 100%;
+
+    background: transparent;
+
+    border: none;
+
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+
+    padding: 0.9rem 0;
+
+    color: #F2F0EB;
+
+    font-size: 0.95rem;
+
+    transition:
+        border-color 0.3s ease;
+}
+
+.form-input::placeholder {
+    color: rgba(255,255,255,0.30);
+}
+
+.form-input:focus {
+    outline: none;
+
+    border-bottom-color: #D7B04A;
+}
+
+
+/* ==========================================
+   BUTTON EFFECT
+========================================== */
+
+button,
+a {
+    transition:
+        all 0.3s ease;
+}
+
+
+/* ==========================================
+   FLOATING CHAT BUTTON
+========================================== */
+
+#chatButton {
+    animation: pulseGold 2.5s infinite;
+}
+
+#chatButton:hover {
+    animation: none;
+}
+
+@keyframes pulseGold {
+
+    0% {
+        box-shadow:
+            0 0 0 0 rgba(215,176,74,0.45);
+    }
+
+    70% {
+        box-shadow:
+            0 0 0 16px rgba(215,176,74,0);
+    }
+
+    100% {
+        box-shadow:
+            0 0 0 0 rgba(215,176,74,0);
+    }
+
+}
+
+
+/* ==========================================
+   MOBILE MENU
+========================================== */
+
+.mobile-link {
+    color: rgba(255,255,255,0.75);
+
+    transition: color 0.3s ease;
+}
+
+.mobile-link:hover {
+    color: #D7B04A;
+}
+
+
+/* ==========================================
+   HERO IMAGE
+========================================== */
+
+#hero img {
+    transition:
+        transform 0.5s ease,
+        box-shadow 0.5s ease;
+}
+
+#hero img:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 30px 60px rgba(0,0,0,0.20);
+}
+
+
+/* ==========================================
+   ABOUT IMAGE
+========================================== */
+
+#about img {
+    transition:
+        transform 0.5s ease;
+}
+
+#about img:hover {
+    transform: scale(1.02);
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+
+    .case-image {
+        height: 240px;
+    }
+
+    .service-card {
+        padding: 2rem;
+    }
+
+}
+
+
+@media (max-width: 640px) {
+
+    .service-card {
+        padding: 1.75rem;
+    }
+
+}
+
+/* ==========================================
+   RIPPLE EFFECT
+========================================== */
+
+button,
+a.bg-gold {
+    position: relative;
+    overflow: hidden;
+}
+
+.ripple {
+    position: absolute;
+
+    border-radius: 50%;
+
+    transform: scale(0);
+
+    animation: ripple 600ms linear;
+
+    background-color: rgba(255,255,255,0.35);
+
+    pointer-events: none;
+}
+
+@keyframes ripple {
+
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+
+}
+
+/* PRELOADER */
+
+#preloader{
+    position:fixed;
+    inset:0;
+
+    background:#111111;
+
+    z-index:9999;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    transition:opacity .8s ease;
+}
+
+#preloader.hide{
+    opacity:0;
+    pointer-events:none;
+}
+
+.preloader-logo{
+    font-family:'Playfair Display',serif;
+
+    color:#D7B04A;
+
+    font-size:3rem;
+
+    letter-spacing:.4em;
+}
+
+.preloader-subtitle{
+    margin-top:20px;
+
+    color:rgba(255,255,255,.45);
+
+    font-size:.75rem;
+
+    letter-spacing:.4em;
+}
+
+.preloader-line{
+    width:0;
+
+    height:2px;
+
+    background:#D7B04A;
+
+    margin:40px auto 0;
+
+    animation:loadingLine 1.8s ease forwards;
+}
+
+@keyframes loadingLine{
+    to{
+        width:180px;
+    }
+}
+
+body{
+    cursor:none;
+}
+
+#cursor-dot{
+    position:fixed;
+
+    width:8px;
+    height:8px;
+
+    background:#D7B04A;
+
+    border-radius:50%;
+
+    pointer-events:none;
+
+    z-index:99999;
+}
+
+#cursor-outline{
+    position:fixed;
+
+    width:40px;
+    height:40px;
+
+    border:1px solid rgba(215,176,74,.5);
+
+    border-radius:50%;
+
+    pointer-events:none;
+
+    z-index:99999;
+
+    transition:
+        width .2s ease,
+        height .2s ease,
+        transform .08s linear;
+}
+
+.cursor-hover{
+    width:70px!important;
+    height:70px!important;
+}
+
+/* ================= PREMIUM SERVICE ================= */
+
+.service-card{
+    position:relative;
+    overflow:hidden;
+}
+
+.service-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:0;
+    left:0;
+
+    width:0;
+    height:3px;
+
+    background:#D7B04A;
+
+    transition:.4s ease;
+}
+
+.service-card:hover::before{
+    width:100%;
+}
+
+.service-card:hover .service-icon{
+    transform:rotate(10deg) scale(1.15);
+}
+
+.service-icon{
+    transition:.4s ease;
+}
+
+/* ================= TESTIMONIAL ================= */
+
+.testimonial-slide{
+
+    display:none;
+
+    animation:fadeSlide .8s ease;
+}
+
+.testimonial-slide.active{
+    display:block;
+}
+
+.testimonial-quote{
+
+    font-family:'Playfair Display',serif;
+
+    font-size:2rem;
+
+    line-height:1.8;
+
+    color:#F2F0EB;
+}
+
+@keyframes fadeSlide{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@media(max-width:768px){
+
+    .testimonial-quote{
+        font-size:1.4rem;
+    }
+
+}
+
+/* ================= TIMELINE ================= */
+
+.timeline{
+    position:relative;
+}
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:120px;
+    top:0;
+    bottom:0;
+
+    width:1px;
+
+    background:rgba(215,176,74,.3);
+}
+
+.timeline-item{
+
+    display:flex;
+
+    gap:40px;
+
+    margin-bottom:60px;
+}
+
+.timeline-year{
+
+    min-width:120px;
+
+    font-family:'Playfair Display',serif;
+
+    color:#D7B04A;
+
+    font-size:2rem;
+}
+
+.timeline-content{
+
+    color:rgba(255,255,255,.7);
+
+    line-height:2;
+}
+
+@media(max-width:768px){
+
+    .timeline::before{
+        display:none;
+    }
+
+    .timeline-item{
+        flex-direction:column;
+        gap:15px;
+    }
+
+}
+
+/* ================= WA PREMIUM ================= */
+
+#waWidget{
+
+    position:fixed;
+
+    right:30px;
+    bottom:30px;
+
+    z-index:999;
+}
+
+#waTooltip{
+
+    background:#111111;
+
+    border:1px solid rgba(215,176,74,.3);
+
+    color:#F2F0EB;
+
+    padding:14px 18px;
+
+    border-radius:12px;
+
+    margin-bottom:12px;
+
+    width:220px;
+
+    line-height:1.6;
+
+    opacity:0;
+
+    transform:translateY(15px);
+
+    transition:.4s ease;
+}
+
+#waTooltip.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+}
+
+#chatButton{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    background:#D7B04A;
+
+    color:#111111;
+
+    padding:16px 24px;
+
+    border-radius:999px;
+
+    font-weight:600;
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,.35);
+
+    transition:.3s ease;
+}
+
+#chatButton:hover{
+    transform:translateY(-4px);
+}
+
+.wa-icon{
+    font-size:1.2rem;
+}
+
+.wa-text{
+    white-space:nowrap;
+}
+
+/* ==========================================
+   MOBILE FLOATING CHAT
+========================================== */
+
+@media (max-width: 768px){
+
+    #waTooltip{
+        display:none;
+    }
+
+    #chatButton{
+
+        width:60px;
+        height:60px;
+
+        padding:0;
+
+        border-radius:50%;
+
+        justify-content:center;
+
+        gap:0;
+    }
+
+    .wa-text{
+        display:none;
+    }
+
+    .wa-icon{
+        font-size:1.5rem;
+    }
+
+}

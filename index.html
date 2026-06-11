@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUHERMAN | Premium Law Firm</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark: '#111111',
+                        dark2: '#181818',
+                        dark3: '#232323',
+                        gold: '#D7B04A',
+                        cream: '#F2F0EB',
+                        muted: '#B8B2A6'
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-dark text-cream font-sans">
+
+    <!-- PREMIUM PRELOADER -->
+<div id="preloader">
+
+    <div class="text-center">
+
+        <h1 class="preloader-logo">
+            SUHERMAN, S.H.
+        </h1>
+
+        <p class="preloader-subtitle">
+            PREMIUM LEGAL REPRESENTATION
+        </p>
+
+        <div class="preloader-line"></div>
+
+    </div>
+
+</div>
+
+<!-- ================= NAVBAR ================= -->
+<header id="navbar"
+    class="fixed top-0 left-0 right-0 z-50 bg-dark3/95 backdrop-blur-md border-b border-white/5 transition-all duration-300">
+
+    <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+        <div class="flex justify-between items-center h-20">
+
+            <!-- Logo -->
+            <a href="#"
+                class="font-serif text-2xl font-semibold tracking-[0.25em] text-gold">
+                SUHERMAN, S.H.
+            </a>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex items-center gap-10">
+
+                <a href="#hero"
+                    class="uppercase tracking-[0.25em] text-xs hover:text-gold transition">
+                    Home
+                </a>
+
+                <a href="#about"
+                    class="uppercase tracking-[0.25em] text-xs hover:text-gold transition">
+                    About
+                </a>
+
+                <a href="#services"
+                    class="uppercase tracking-[0.25em] text-xs hover:text-gold transition">
+                    Services
+                </a>
+
+                <a href="#cases"
+                    class="uppercase tracking-[0.25em] text-xs hover:text-gold transition">
+                    Cases
+                </a>
+
+                <a href="#contact"
+                    class="uppercase tracking-[0.25em] text-xs hover:text-gold transition">
+                    Contact
+                </a>
+
+            </nav>
+
+            <!-- CTA -->
+            <div class="hidden md:block">
+
+                <a href="#contact"
+                    class="border border-gold text-gold px-5 py-3 uppercase tracking-[0.25em] text-xs font-semibold hover:bg-gold hover:text-dark transition duration-300">
+
+                    Consultation
+
+                </a>
+
+            </div>
+
+            <!-- Mobile Button -->
+            <button id="menuBtn"
+                class="md:hidden text-cream">
+
+                <svg xmlns="http://www.w3.org/2000/svg"
+                    class="w-7 h-7"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+
+                    <path stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16"/>
+
+                </svg>
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu"
+        class="hidden md:hidden bg-dark3 border-t border-white/5">
+
+        <div class="px-5 py-6 flex flex-col gap-5">
+
+            <a href="#hero" class="mobile-link uppercase text-sm tracking-[0.25em]">
+                Home
+            </a>
+
+            <a href="#about" class="mobile-link uppercase text-sm tracking-[0.25em]">
+                About
+            </a>
+
+            <a href="#services" class="mobile-link uppercase text-sm tracking-[0.25em]">
+                Services
+            </a>
+
+            <a href="#cases" class="mobile-link uppercase text-sm tracking-[0.25em]">
+                Cases
+            </a>
+
+            <a href="#contact" class="mobile-link uppercase text-sm tracking-[0.25em]">
+                Contact
+            </a>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+<section id="hero"
+    class="bg-[#FAFAF8] text-dark pt-36 pb-24">
+
+    <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+            <!-- Left -->
+            <div class="fade-up">
+
+                <p class="uppercase text-xs tracking-[0.35em] text-gold font-semibold mb-5">
+
+                    Premium Legal Representation
+
+                </p>
+
+                <h1 id="heroTitle"
+    class="font-serif text-5xl md:text-6xl xl:text-7xl leading-tight">
+
+                    Keadilan Melalui
+                    <br>
+
+                    <span class="italic text-gold">
+
+                        Integritas.
+
+                    </span>
+
+                </h1>
+
+                <p class="mt-8 text-muted leading-8 max-w-xl">
+
+                    Memberikan layanan hukum eksklusif dengan pendekatan strategis,
+                    analitis, dan berorientasi pada hasil terbaik bagi individu maupun
+                    perusahaan.
+
+                </p>
+
+                <div class="mt-10 flex flex-wrap gap-5">
+
+                    <a href="#contact"
+                        class="bg-gold text-dark px-8 py-4 uppercase tracking-[0.25em] text-xs font-bold hover:scale-105 transition duration-300">
+
+                        Konsultasi Gratis
+
+                    </a>
+
+                    <a href="#about"
+                        class="border border-dark px-8 py-4 uppercase tracking-[0.25em] text-xs font-bold hover:bg-dark hover:text-white transition">
+
+                        Pelajari Lebih Lanjut
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- Right -->
+            <div class="relative fade-up">
+
+                <!-- Gold Frame -->
+                <!-- <div id="heroFrame"
+    class="absolute -bottom-8 left-8 w-[75%] h-[85%] border border-gold">
+
+                </div> -->
+
+                <!-- Hero Image -->
+                <img id="heroImage"
+                    src="assets/images/hero-scales.png"
+                    alt="Justice Scales"
+                    class="relative z-10 w-full object-cover shadow-2xl">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+<section id="about"
+    class="bg-dark2 py-24">
+
+    <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+
+            <!-- Image -->
+            <div class="relative fade-up">
+
+                <img src="assets/images/lawyer.png"
+                    alt="Senior Lawyer"
+                    class="w-full object-cover">
+
+                <!-- Badge -->
+                <div class="absolute bottom-6 right-6 bg-dark border border-white/10 px-6 py-4">
+
+                    <p class="text-3xl font-semibold text-gold">
+
+                        20+
+
+                    </p>
+
+                    <p class="uppercase text-[10px] tracking-[0.3em] text-white/60">
+
+                        Years of Excellence
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Content -->
+            <div class="fade-up">
+
+                <p class="uppercase text-xs tracking-[0.35em] text-gold font-semibold mb-5">
+
+                    About SUHERMAN, S.H.
+
+                </p>
+
+                <h2 class="font-serif text-4xl md:text-5xl leading-tight">
+
+                    Mendefinisikan Ulang
+                    <br>
+
+                    Representasi Hukum.
+
+                </h2>
+
+                <p class="mt-8 text-white/65 leading-8">
+
+                    SUHERMAN, S.H. hadir untuk memberikan solusi hukum
+                    berkelas dunia dengan pemahaman mendalam terhadap
+                    kebutuhan klien, baik dalam aspek litigasi,
+                    korporasi, maupun perlindungan aset.
+
+                </p>
+
+                <div class="border-l-2 border-gold pl-6 mt-10">
+
+                    <p class="font-serif italic text-2xl leading-relaxed">
+
+                        "Keunggulan bukan sekadar tindakan,
+                        melainkan kebiasaan dalam menjaga
+                        kepercayaan dan menegakkan keadilan."
+
+                    </p>
+
+                </div>
+
+                <p class="mt-10 text-white/60 leading-8">
+
+                    Kami percaya bahwa ketelitian terhadap detail,
+                    integritas, dan strategi yang matang merupakan
+                    fondasi utama dalam mencapai hasil terbaik.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PREMIUM COUNTERS -->
+<section class="bg-dark py-20">
+
+    <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-12 text-center">
+
+            <div class="fade-up">
+
+                <h3 class="counter text-5xl font-serif text-gold"
+                    data-target="20">
+                    0
+                </h3>
+
+                <p class="mt-4 uppercase tracking-[0.25em] text-xs text-white/50">
+                    Years Experience
+                </p>
+
+            </div>
+
+            <div class="fade-up">
+
+                <h3 class="counter text-5xl font-serif text-gold"
+                    data-target="500">
+                    0
+                </h3>
+
+                <p class="mt-4 uppercase tracking-[0.25em] text-xs text-white/50">
+                    Cases Won
+                </p>
+
+            </div>
+
+            <div class="fade-up">
+
+                <h3 class="counter text-5xl font-serif text-gold"
+                    data-target="98">
+                    0
+                </h3>
+
+                <p class="mt-4 uppercase tracking-[0.25em] text-xs text-white/50">
+                    Success Rate
+                </p>
+
+            </div>
+
+            <div class="fade-up">
+
+                <h3 class="counter text-5xl font-serif text-gold"
+                    data-target="50">
+                    0
+                </h3>
+
+                <p class="mt-4 uppercase tracking-[0.25em] text-xs text-white/50">
+                    Corporate Clients
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="bg-[#D7B04A] py-16">
+
+    <div class="max-w-5xl mx-auto px-5 text-center">
+
+        <h2 class="font-serif text-4xl text-[#111111]">
+
+            Setiap Keputusan Hukum
+            Menentukan Masa Depan Anda.
+
+        </h2>
+
+        <p class="mt-6 text-[#111111]/80 leading-8">
+
+            Konsultasikan perkara Anda bersama tim profesional
+            untuk mendapatkan solusi hukum yang tepat.
+
+        </p>
+
+        <a href="#contact"
+           class="inline-block mt-10 bg-[#111111] text-[#F2F0EB]
+                  px-10 py-4 uppercase tracking-[0.25em]
+                  text-xs font-semibold hover:scale-105 transition">
+
+            Jadwalkan Konsultasi
+
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ================= SERVICES ================= -->
+<section id="services" class="bg-[#151515] py-24">
+
+    <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+        <div class="text-center fade-up">
+
+            <p class="uppercase text-xs tracking-[0.35em] text-gold font-semibold mb-5">
+                Area Praktik
+            </p>
+
+            <h2 class="font-serif text-4xl md:text-5xl">
+                Keahlian Hukum Khusus
+            </h2>
+
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+
+            <!-- Card 1 -->
+            <div class="service-card fade-up">
+
+                <div class="service-icon mb-8 text-gold">
+                    ⚖️
+                </div>
+
+                <h3 class="font-serif text-2xl mb-5">
+                    Corporate Law
+                </h3>
+
+                <p class="text-white/60 leading-8">
+                    Pendampingan merger, akuisisi, restrukturisasi,
+                    tata kelola perusahaan, serta mitigasi risiko bisnis.
+                </p>
+
+            </div>
+
+            <!-- Card 2 -->
+            <div class="service-card fade-up">
+
+                <div class="service-icon mb-8 text-gold">
+                    🛡️
+                </div>
+
+                <h3 class="font-serif text-2xl mb-5">
+                    Civil Litigation
+                </h3>
+
+                <p class="text-white/60 leading-8">
+                    Representasi profesional dalam sengketa perdata
+                    dengan pendekatan strategis dan efektif.
+                </p>
+
+            </div>
+
+            <!-- Card 3 -->
+            <div class="service-card fade-up">
+
+                <div class="service-icon mb-8 text-gold">
+                    🏛️
+                </div>
+
+                <h3 class="font-serif text-2xl mb-5">
+                    White Collar Defense
+                </h3>
+
+                <p class="text-white/60 leading-8">
+                    Pendampingan hukum terhadap investigasi regulasi
+                    dan perkara kejahatan korporasi.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CASE STUDIES ================= -->
+<section id="cases" class="bg-[#1A1A1A] py-24">
+
+    <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+        <div class="flex flex-col md:flex-row md:justify-between md:items-end gap-8 fade-up">
+
+            <div>
+
+                <p class="uppercase text-xs tracking-[0.35em] text-gold font-semibold mb-5">
+                    Case Studies
+                </p>
+
+                <h2 class="font-serif text-4xl md:text-5xl">
+                    Perkara & Preseden
+                </h2>
+
+            </div>
+
+            <a href="#"
+                class="uppercase tracking-[0.25em] text-xs text-white/60 hover:text-gold transition">
+
+                Lihat Semua →
+
+            </a>
+
+        </div>
+
+
+        <div class="grid lg:grid-cols-2 gap-10 mt-16">
+
+            <!-- Case 1 -->
+            <article class="case-card fade-up">
+
+                <div class="overflow-hidden">
+
+                    <img src="assets/images/case-1.jpg"
+                        alt="Case Study"
+                        class="case-image">
+
+                </div>
+
+                <div class="p-8">
+
+                    <div class="flex justify-between items-center mb-6">
+
+                        <span class="uppercase tracking-[0.3em] text-[10px] text-white/50">
+
+                            Corporate Merger
+
+                        </span>
+
+                        <span class="font-serif text-2xl text-gold">
+
+                            $500M+
+
+                        </span>
+
+                    </div>
+
+                    <h3 class="font-serif text-3xl mb-5">
+
+                        Sengketa Akuisisi
+                        Lintas Batas
+
+                    </h3>
+
+                    <p class="text-white/60 leading-8">
+
+                        Mengamankan transaksi bernilai tinggi
+                        dengan pendekatan hukum multi yurisdiksi.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- Case 2 -->
+            <article class="case-card fade-up">
+
+                <div class="overflow-hidden">
+
+                    <img src="assets/images/case-2.jpg"
+                        alt="Case Study"
+                        class="case-image">
+
+                </div>
+
+                <div class="p-8">
+
+                    <div class="flex justify-between items-center mb-6">
+
+                        <span class="uppercase tracking-[0.3em] text-[10px] text-white/50">
+
+                            Civil Litigation
+
+                        </span>
+
+                        <span class="font-serif text-2xl text-gold">
+
+                            Victory
+
+                        </span>
+
+                    </div>
+
+                    <h3 class="font-serif text-3xl mb-5">
+
+                        Perlindungan Hak
+                        Kekayaan Intelektual
+
+                    </h3>
+
+                    <p class="text-white/60 leading-8">
+
+                        Berhasil mempertahankan hak eksklusif
+                        klien terhadap gugatan pelanggaran.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= TESTIMONIAL ================= -->
+<section id="testimonial" class="bg-[#111111] py-24 overflow-hidden">
+
+    <div class="max-w-4xl mx-auto px-5 text-center">
+
+        <p class="uppercase text-xs tracking-[0.35em] text-gold font-semibold mb-5">
+            Testimonial
+        </p>
+
+        <h2 class="font-serif text-4xl md:text-5xl mb-16">
+            Apa Kata Klien Kami
+        </h2>
+
+        <div class="relative">
+
+            <div id="testimonialContainer">
+
+                <!-- Slide 1 -->
+                <div class="testimonial-slide active">
+
+                    <p class="testimonial-quote">
+                        "Pendampingan hukum terbaik yang pernah kami dapatkan.
+                        Profesional, cepat, dan selalu memberikan solusi strategis."
+                    </p>
+
+                    <h4 class="mt-8 font-semibold text-gold">
+                        Budi Santoso
+                    </h4>
+
+                    <p class="text-white/50 mt-2">
+                        CEO PT Nusantara Investama
+                    </p>
+
+                    <div class="mt-5 text-gold text-xl">
+                        ★★★★★
+                    </div>
+
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="testimonial-slide">
+
+                    <p class="testimonial-quote">
+                        "Tim SUHERMAN, S.H. membantu kami menyelesaikan sengketa besar
+                        dengan hasil yang jauh melampaui ekspektasi."
+                    </p>
+
+                    <h4 class="mt-8 font-semibold text-gold">
+                        Anita Wijaya
+                    </h4>
+
+                    <p class="text-white/50 mt-2">
+                        Direktur PT Prima Karya
+                    </p>
+
+                    <div class="mt-5 text-gold text-xl">
+                        ★★★★★
+                    </div>
+
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="testimonial-slide">
+
+                    <p class="testimonial-quote">
+                        "Diskret, profesional, dan sangat detail.
+                        Kami merasa aman mempercayakan perkara kepada mereka."
+                    </p>
+
+                    <h4 class="mt-8 font-semibold text-gold">
+                        Richard Gunawan
+                    </h4>
+
+                    <p class="text-white/50 mt-2">
+                        Managing Partner
+                    </p>
+
+                    <div class="mt-5 text-gold text-xl">
+                        ★★★★★
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= TIMELINE ================= -->
+<section class="bg-[#181818] py-24">
+
+    <div class="max-w-5xl mx-auto px-5">
+
+        <div class="text-center fade-up">
+
+            <p class="uppercase text-xs tracking-[0.35em] text-gold font-semibold mb-5">
+                Journey
+            </p>
+
+            <h2 class="font-serif text-4xl md:text-5xl">
+                Perjalanan SUHERMAN, S.H.
+            </h2>
+
+        </div>
+
+        <div class="timeline mt-20">
+
+            <div class="timeline-item fade-up">
+                <span class="timeline-year">2005</span>
+                <div class="timeline-content">
+                    Firma hukum resmi didirikan.
+                </div>
+            </div>
+
+            <div class="timeline-item fade-up">
+                <span class="timeline-year">2012</span>
+                <div class="timeline-content">
+                    Menyelesaikan lebih dari 100 perkara.
+                </div>
+            </div>
+
+            <div class="timeline-item fade-up">
+                <span class="timeline-year">2018</span>
+                <div class="timeline-content">
+                    Meraih penghargaan firma hukum nasional.
+                </div>
+            </div>
+
+            <div class="timeline-item fade-up">
+                <span class="timeline-year">2024</span>
+                <div class="timeline-content">
+                    Dipercaya oleh 500+ klien korporasi.
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="bg-[#151515] py-24">
+
+    <div class="max-w-7xl mx-auto px-5 lg:px-8">
+
+        <div class="grid lg:grid-cols-2 gap-16">
+
+            <!-- Left -->
+            <div class="fade-up">
+
+                <h2 class="font-serif text-4xl md:text-5xl leading-tight">
+
+                    Diskreta.
+                    <br>
+
+                    Tepat.
+                    <span class="italic text-gold">
+
+                        Eksklusif.
+
+                    </span>
+
+                </h2>
+
+                <p class="mt-8 text-white/60 leading-8">
+
+                    Jadwalkan konsultasi awal bersama tim kami
+                    untuk mendiskusikan kebutuhan hukum Anda
+                    secara profesional dan rahasia.
+
+                </p>
+
+
+                <form class="mt-12 space-y-8">
+
+                    <input type="text"
+                        placeholder="Nama Lengkap"
+                        class="form-input">
+
+                    <input type="email"
+                        placeholder="Alamat Email"
+                        class="form-input">
+
+                    <input type="text"
+                        placeholder="Subjek Perkara"
+                        class="form-input">
+
+                    <textarea rows="4"
+                        placeholder="Pesan Singkat (Opsional)"
+                        class="form-input resize-none"></textarea>
+
+                    <button type="submit"
+                        class="border border-gold px-8 py-4 uppercase tracking-[0.25em] text-xs font-semibold text-gold hover:bg-gold hover:text-dark transition">
+
+                        Kirim Pertanyaan
+
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- Right -->
+            <div class="fade-up">
+
+                <div class="border border-white/10 bg-[#1B1B1B] p-8">
+
+                    <h3 class="font-serif text-3xl mb-8">
+
+                        Kantor Utama
+
+                    </h3>
+
+                    <div class="space-y-6 text-white/65 leading-8">
+
+                        <div>
+                            <strong class="text-gold block mb-1">
+                                Alamat
+                            </strong>
+
+                            Gedung Artha Lt. 45<br>
+                            Jl. Jend. Sudirman Kav. 52–53<br>
+                            Jakarta Selatan
+                        </div>
+
+                        <div>
+                            <strong class="text-gold block mb-1">
+                                Telepon
+                            </strong>
+
+                            +62 21 555 0199
+                        </div>
+
+                        <div>
+                            <strong class="text-gold block mb-1">
+                                Email
+                            </strong>
+
+                            inquiries@SUHERMAN, S.H..law
+                        </div>
+
+                    </div>
+
+
+                    <div class="mt-10 overflow-hidden">
+
+                        <iframe
+    class="w-full h-72 grayscale contrast-125"
+    loading="lazy"
+    allowfullscreen
+    referrerpolicy="no-referrer-when-downgrade"
+    src="https://www.google.com/maps?q=Jakarta+Selatan&output=embed">
+</iframe>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-dark border-t border-white/5">
+
+    <div class="max-w-7xl mx-auto px-5 lg:px-8 py-10">
+
+        <div class="flex flex-col lg:flex-row justify-between items-center gap-8">
+
+            <div class="font-serif text-2xl tracking-[0.25em] text-gold">
+
+                SUHERMAN, S.H.
+
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-8 text-xs uppercase tracking-[0.25em] text-white/40">
+
+                <a href="#" class="hover:text-gold transition">
+                    Privacy Policy
+                </a>
+
+                <a href="#" class="hover:text-gold transition">
+                    Terms of Service
+                </a>
+
+                <a href="#" class="hover:text-gold transition">
+                    Legal Disclaimer
+                </a>
+
+            </div>
+
+            <div class="text-xs text-white/40">
+
+                © 2026 SUHERMAN, S.H. Law Firm.
+                All Rights Reserved.
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- ================= FLOATING CHAT ================= -->
+<!-- <button id="chatButton"
+    class="fixed bottom-6 right-6 w-14 h-14 rounded-full bg-gold text-dark shadow-2xl z-50 flex items-center justify-center hover:scale-110 transition">
+
+    💬
+
+</button> -->
+<div id="waWidget">
+
+    <!-- <div id="waTooltip">
+
+        Butuh bantuan hukum?
+        Kami siap membantu.
+
+    </div> -->
+
+    <button id="chatButton">
+
+        <span class="wa-icon">
+            💬
+        </span>
+
+        <span class="wa-text">
+            Konsultasi Sekarang
+        </span>
+
+    </button>
+
+</div>
+
+<!-- CUSTOM CURSOR -->
+<div id="cursor-dot"></div>
+
+<div id="cursor-outline"></div>
+
+<script src="assets/js/script.js"></script>
+
+</body>
+</html>
