@@ -348,6 +348,121 @@ a.bg-gold {
     animation:loadingLine 1.8s ease forwards;
 }
 
+/* ==========================================
+   PRELOADER MOBILE
+========================================== */
+
+@media (max-width: 768px){
+
+    #preloader{
+        padding: 0 24px;
+    }
+
+    /* ==========================================
+   LAWYER NAME
+========================================== */
+
+.lawyer-name{
+    font-size: 4rem;
+    line-height: 1.1;
+    white-space: nowrap;
+}
+
+/* Tablet */
+@media (max-width: 1024px){
+
+    .lawyer-name{
+        font-size: 3.2rem;
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 768px){
+
+    .lawyer-name{
+        font-size: 2.2rem;
+        letter-spacing: 0.10em;
+    }
+
+}
+
+/* Mobile kecil */
+@media (max-width: 480px){
+
+    .lawyer-name{
+        font-size: 1.75rem;
+    }
+
+}
+
+    .preloader-logo{
+
+        font-family:'Playfair Display',serif;
+    color:#D7B04A;
+    font-size:3rem;
+    letter-spacing:.4em;
+
+    animation: logoReveal .8s ease;
+    }
+
+    @keyframes logoReveal{
+
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+    .preloader-subtitle{
+
+        margin-top: 14px;
+
+        font-size: .65rem;
+
+        letter-spacing: .25em;
+
+        text-align: center;
+    }
+
+    .preloader-line{
+
+        margin-top: 28px;
+    }
+
+    @keyframes loadingLine{
+
+        to{
+            width: 100px;
+        }
+
+    }
+
+}
+
+.mobile-subtitle{
+    display: none;
+}
+
+@media (max-width: 768px){
+
+    .desktop-subtitle{
+        display: none;
+    }
+
+    .mobile-subtitle{
+        display: block;
+    }
+
+}
+
+
 @keyframes loadingLine{
     to{
         width:180px;
