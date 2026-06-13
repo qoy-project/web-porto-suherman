@@ -357,6 +357,7 @@ a.bg-gold {
     #preloader{
         padding: 0 24px;
     }
+}
 
     /* ==========================================
    LAWYER NAME
@@ -382,7 +383,7 @@ a.bg-gold {
 
     .lawyer-name{
         font-size: 2.2rem;
-        letter-spacing: 0.10em;
+        letter-spacing: 0.05em;
     }
 
 }
@@ -444,7 +445,7 @@ a.bg-gold {
 
     }
 
-}
+
 
 .mobile-subtitle{
     display: none;

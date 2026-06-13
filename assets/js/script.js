@@ -400,3 +400,80 @@ if (tooltip) {
 
 }
 
+/* ==========================================
+   GOOGLE SPREADSHEET FORM
+========================================== */
+
+const contactForm = document.getElementById("contactForm");
+
+if (contactForm) {
+
+    contactForm.addEventListener("submit", async function (e) {
+
+        e.preventDefault();
+
+        const submitBtn = this.querySelector("button");
+
+        submitBtn.disabled = true;
+        submitBtn.innerText = "Mengirim...";
+
+        const formData = new FormData();
+
+        formData.append(
+            "name",
+            document.getElementById("name").value
+        );
+
+        formData.append(
+            "email",
+            document.getElementById("email").value
+        );
+
+        formData.append(
+            "subject",
+            document.getElementById("subject").value
+        );
+
+        formData.append(
+            "message",
+            document.getElementById("message").value
+        );
+
+        try {
+
+            const response = await fetch(
+                "https://script.google.com/macros/s/AKfycbwJoA9rxPeFZ9vItdSZhxQ2VMH_D1Pb3jEASZRejlUu3aO5I0CxhiNVwNRqxKTVoqCG/exec",
+                {
+                    method: "POST",
+                    body: formData
+                }
+            );
+
+            const result = await response.text();
+
+            if (result === "success") {
+
+                document.getElementById("formStatus").innerText = "✓ Pesan berhasil dikirim.";
+
+                contactForm.reset();
+
+            } else {
+
+                document.getElementById("formStatus").innerText = "✕ Gagal mengirim pesan.";
+
+            }
+
+        } catch (error) {
+
+            console.error(error);
+
+            alert("Terjadi kesalahan.");
+
+        }
+
+        submitBtn.disabled = false;
+        submitBtn.innerText = "Kirim Pertanyaan";
+
+    });
+
+}
